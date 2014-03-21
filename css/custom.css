@@ -13,3 +13,20 @@ color: #fff
 .navbar {
     border-radius: 0px;
 }
+
+.nav {
+  padding-left: 35px;
+}
+
+.page-header {
+  border-bottom: none;
+  padding-left: 50px;
+}
+
+a:hover {
+  color: #666;
+}
+
+a {
+  color: #333;
+}
