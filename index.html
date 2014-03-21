@@ -1,9 +1,11 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: Home
 ---
 
 <div id="home">
+  <h1>{{ page.title }}</h1>
+  <img src="http://www.gravatar.com/avatar/edc268377f2d882d7d6337e7656c12c7?s=200">
   <h1>Blog Posts</h1>
   <ul class="posts">
     {% for post in site.posts %}
