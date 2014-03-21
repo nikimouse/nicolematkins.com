@@ -3,7 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/css/syntax.css">
-    <link rel="stylesheet" href="/css/main.css" >
+    <!-- <link rel="stylesheet" href="/css/syntax.css"> -->
+    <!-- <link rel="stylesheet" href="/css/main.css" > -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/custom.css">
   </head>
   <body>
+    <div class="page-header header">
+      <h1><a href="/">{{ site.name }}</a><br><small>Subtext for header</small></h1>
+    </div>
+    <nav class="navbar navbar-default" role="navigation">
+      <ul class="nav navbar-nav">
+        {% for category in site.categories %}
+
+        <li><a href="/categories/{{ category[0] }}">{{ category[0] | upcase }}</a></li>
+
+        {% endfor %}
+      </ul>
+    </nav>
